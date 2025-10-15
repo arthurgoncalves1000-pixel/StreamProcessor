@@ -1,0 +1,11 @@
+{"account":{"active-card":true,"available-limit":100}}
+{"account":{"active-card":true,"available-limit":100},"violations":["account-already-initialized"]}
+{"account":{"active-card":true,"available-limit":100},"violations":["account-already-initialized"]}
+{"account":{"active-card":true,"available-limit":100},"violations":["account-already-initialized"]}
+{"account":{"active-card":true,"available-limit":100},"violations":["account-already-initialized"]}
+{"account":{"active-card":true,"available-limit":100},"violations":["account-already-initialized"]}
+{"account":{"active-card":true,"available-limit":100},"violations":["account-already-initialized"]}
+{"account":{"active-card":true,"available-limit":100},"violations":["account-already-initialized"]}
+{"account":{"active-card":true,"available-limit":100},"violations":["account-already-initialized"]}
+{"account":{"active-card":true,"available-limit":100},"violations":["account-already-initialized"]}
+{"account":{"active-card":true,"available-limit":100},"violations":["account-already-initialized"]}
