@@ -10,8 +10,6 @@ public class Conta {
     private List<String> violations;
 
 
-
-
     public Conta(boolean init, boolean activeCard, long availableLimit){
         this.init           = init;
         this.activeCard     = activeCard;
@@ -19,12 +17,10 @@ public class Conta {
     }
 
 
-    public boolean transa(Long valor){
+    public void transa(Long valor){
         if (this.availableLimit - valor >= 0){
             this.availableLimit -= valor;
-            return true;
         }
-        return false;
     }
 
     public void adicionarViolacao(String novaViolacao) {
@@ -35,7 +31,7 @@ public class Conta {
 
     public void limparViolacoes() {
         if (this.violations != null) {
-            this.violations.clear();
+            this.violations=null;
         }
     }
 
@@ -57,10 +53,6 @@ public class Conta {
 
     public List<String> getViolations() {
         return violations;
-    }
-
-    public void setViolations(List<String> violations) {
-        this.violations = violations;
     }
 
     public boolean isInit() {
