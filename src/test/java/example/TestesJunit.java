@@ -1,7 +1,7 @@
 package example;
 
-import org.example.Conta;
-import org.example.ProcessadorJson;
+import org.example.model.Conta;
+import org.example.service.ProcessadorJson;
 import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
