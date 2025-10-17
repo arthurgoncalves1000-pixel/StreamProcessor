@@ -9,22 +9,18 @@ public class Conta {
     private long    availableLimit;
     private List<String> violations;
 
-
-
-
     public Conta(boolean init, boolean activeCard, long availableLimit){
         this.init           = init;
         this.activeCard     = activeCard;
         this.availableLimit = availableLimit;
+        this.violations     = new ArrayList<>();
     }
 
 
-    public boolean transa(Long valor){
+    public void debitar(long valor){
         if (this.availableLimit - valor >= 0){
             this.availableLimit -= valor;
-            return true;
         }
-        return false;
     }
 
     public void adicionarViolacao(String novaViolacao) {
@@ -34,9 +30,11 @@ public class Conta {
     }
 
     public void limparViolacoes() {
-        if (this.violations != null) {
-            this.violations.clear();
-        }
+        this.violations.clear();
+    }
+
+    public boolean verificarLimite(long valor){
+        return this.availableLimit - valor >= 0;
     }
 
     public boolean isActiveCard() {
@@ -57,10 +55,6 @@ public class Conta {
 
     public List<String> getViolations() {
         return violations;
-    }
-
-    public void setViolations(List<String> violations) {
-        this.violations = violations;
     }
 
     public boolean isInit() {
